@@ -1,10 +1,15 @@
 import React from 'react'
 
+import {SliderData} from './SliderData'
 
 const HomeSlider = ()=>{
   return (
     <>
-    <div>hi</div>
+    {
+      SliderData.map((slides,index)=>((
+          <img src={slides.image} alt='img'/>
+      )))
+    }
     </>
     )
 }
