@@ -12,7 +12,7 @@ const HomeSlider = ()=>{
     <FaArrowAltCircleRight className={classes.rightArrow}/>
     {
       SliderData.map((slides,index)=>((
-          <img src={slides.image} alt='img'/>
+          <img src={slides.image} alt='img' classes={image}/>
       )))
     }
     
