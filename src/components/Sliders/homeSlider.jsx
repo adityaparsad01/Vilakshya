@@ -2,7 +2,7 @@ import React from 'react'
 import {FaArrowAltCircleLeft,FaArrowAltCircleRight} from 'react-icons/fa'
 
 import {SliderData} from './SliderData'
-import useStyles from './Styles';
+import useStyles from './styles';
 
 const HomeSlider = ()=>{
   const classes = useStyles();
@@ -12,7 +12,7 @@ const HomeSlider = ()=>{
     <FaArrowAltCircleRight className={classes.rightArrow}/>
     {
       SliderData.map((slides,index)=>((
-          <img src={slides.image} alt='img' classes={image}/>
+          <img src={slides.image} alt='img' className={classes.image}/>
       )))
     }
     
