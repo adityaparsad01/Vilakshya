@@ -9,10 +9,24 @@ export default makeStyles(() => ({
     alignItems:'center'
   },
   leftArrow:{
-    
+    position:'absolute',
+    top:'50%',
+    left:'32px',
+    fontSize:'3rem',
+    color:'#000',
+    zIndex: 10,
+    cursor: 'pointer',
+    userSelect: 'none'
   },
   rightArrow:{
-    
+    position: 'absolute',
+    top: '50%',
+    right: '32px',
+    fontSize: '3rem',
+    color: '#000',
+    zIndex:10,
+    cursor:'pointer',
+    userSelect:'none'
   },
   image:{
     width:'1000px',
