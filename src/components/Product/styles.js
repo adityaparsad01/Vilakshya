@@ -18,7 +18,6 @@ export default makeStyles(() => ({
   },
   title:{
     textTransform: "capitalize",
-    backgroundColor: "red"
   },
   price:{
     display:"flex"

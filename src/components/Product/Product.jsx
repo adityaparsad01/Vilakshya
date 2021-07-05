@@ -3,18 +3,16 @@ import {
   Card,
   CardMedia,
   CardContent,
-  CardActions,
-  Typography,
-  IconButton
+  Typography
 } from '@material-ui/core';
 import { AddShoppingCard } from '@material-ui/icons';
 import useStyles from './styles';
 
-const Product = ({ product }) => {
+const Product = ({ productData }) => {
   const classes = useStyles();
 
 
-  const productList = product.fields
+  const productList = productData.fields
 
   const image = (productList.Attachments)
   const productImg = []
@@ -34,11 +32,11 @@ const Product = ({ product }) => {
         />
         <CardContent>
           <div className={classes.cardContent}>
-            <Typography className={classes.title} variant="h5" gutterBottom align={"center"}>
+            <Typography className={classes.title} variant="body2" gutterBottom align={"left"}>
               {productList.Name}
             </Typography>
           </div>
-          <div display="flex" flexGrow={1} className={classes.price}>
+          <div display="flex"  className={classes.price}>
           <Typography  variant="h3"  align={"center"}>
               <span>₹</span>{productList.price}
             </Typography>
