@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {
   Card,
   CardMedia,
@@ -12,18 +12,38 @@ import useStyles from './styles';
 
 const Product = ({ product }) => {
   const classes = useStyles();
+
+
+  const productList = product.fields
+
+  const image = (productList.Attachments)
+  const productImg = []
+  image.map((item,idx)=>{
+    productImg.push(item.url)
+  })
+
+  console.log(productList)
+
   return (
     <>
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
-          image={product.images}
-          title={product.name}
+          image={productImg}
+          title={productList.Name}
         />
         <CardContent>
           <div className={classes.cardContent}>
-            <Typography variant="h5" gutterBottom>
-              {product.name}
+            <Typography className={classes.title} variant="h5" gutterBottom align={"center"}>
+              {productList.Name}
+            </Typography>
+          </div>
+          <div display="flex" flexGrow={1} className={classes.price}>
+          <Typography  variant="h3"  align={"center"}>
+              <span>₹</span>{productList.price}
+            </Typography>
+            <Typography  variant="h6"  align={"center"} className={classes.mainprice}>
+            <span>₹</span>{productList.mainprice}
             </Typography>
           </div>
         </CardContent>

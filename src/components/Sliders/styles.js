@@ -11,9 +11,9 @@ export default makeStyles(() => ({
   leftArrow: {
     position: 'absolute',
     top: '50%',
-    left: '32px',
+    left: '16px',
     fontSize: '3rem',
-    color: '#000',
+    color: '##5c5a56',
     zIndex: 10,
     cursor: 'pointer',
     userSelect: 'none'
@@ -21,9 +21,9 @@ export default makeStyles(() => ({
   rightArrow: {
     position: 'absolute',
     top: '50%',
-    right: '32px',
+    right: '16px',
     fontSize: '3rem',
-    color: '#000',
+    color: '##5c5a56',
     zIndex: 10,
     cursor: 'pointer',
     userSelect: 'none'

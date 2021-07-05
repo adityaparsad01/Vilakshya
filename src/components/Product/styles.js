@@ -15,5 +15,17 @@ export default makeStyles(() => ({
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between'
+  },
+  title:{
+    textTransform: "capitalize",
+    backgroundColor: "red"
+  },
+  price:{
+    display:"flex"
+  },
+  mainprice:{
+    color:"#757575",
+    padding:"10px",
+    textDecoration: "line-through"
   }
 }));
